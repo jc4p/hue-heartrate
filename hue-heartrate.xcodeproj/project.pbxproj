@@ -7,21 +7,90 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47617309C9D4FDA2FBE6A2F4 /* Pods_HueHeartrateWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0E8CAC75CA1ED310899E03 /* Pods_HueHeartrateWatch_Extension.framework */; };
 		67C8DB541C24C3FF00F03DD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C8DB531C24C3FF00F03DD6 /* AppDelegate.swift */; };
-		67C8DB561C24C3FF00F03DD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C8DB551C24C3FF00F03DD6 /* ViewController.swift */; };
+		67C8DB561C24C3FF00F03DD6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C8DB551C24C3FF00F03DD6 /* MainViewController.swift */; };
 		67C8DB591C24C3FF00F03DD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C8DB571C24C3FF00F03DD6 /* Main.storyboard */; };
 		67C8DB5B1C24C3FF00F03DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67C8DB5A1C24C3FF00F03DD6 /* Assets.xcassets */; };
 		67C8DB5E1C24C3FF00F03DD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C8DB5C1C24C3FF00F03DD6 /* LaunchScreen.storyboard */; };
+		67C8DB6E1C24C62000F03DD6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C8DB6C1C24C62000F03DD6 /* Interface.storyboard */; };
+		67C8DB701C24C62000F03DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67C8DB6F1C24C62000F03DD6 /* Assets.xcassets */; };
+		67C8DB771C24C62100F03DD6 /* HueHeartrateWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 67C8DB761C24C62100F03DD6 /* HueHeartrateWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		67C8DB7C1C24C62100F03DD6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C8DB7B1C24C62100F03DD6 /* InterfaceController.swift */; };
+		67C8DB7E1C24C62100F03DD6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C8DB7D1C24C62100F03DD6 /* ExtensionDelegate.swift */; };
+		67C8DB801C24C62100F03DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67C8DB7F1C24C62100F03DD6 /* Assets.xcassets */; };
+		67C8DB841C24C62100F03DD6 /* HueHeartrateWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 67C8DB6A1C24C62000F03DD6 /* HueHeartrateWatch.app */; };
+		67C8DB8E1C24D25C00F03DD6 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C8DB8D1C24D25C00F03DD6 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		67C8DB781C24C62100F03DD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67C8DB481C24C3FF00F03DD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67C8DB751C24C62100F03DD6;
+			remoteInfo = "HueHeartrateWatch Extension";
+		};
+		67C8DB821C24C62100F03DD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67C8DB481C24C3FF00F03DD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67C8DB691C24C62000F03DD6;
+			remoteInfo = HueHeartrateWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		67C8DB881C24C62100F03DD6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				67C8DB771C24C62100F03DD6 /* HueHeartrateWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C8DB8C1C24C62100F03DD6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				67C8DB841C24C62100F03DD6 /* HueHeartrateWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		03698D8EF2B54C28DDE16B49 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		2751647022204946690D5DBE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		2F0E8CAC75CA1ED310899E03 /* Pods_HueHeartrateWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HueHeartrateWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C8DB501C24C3FF00F03DD6 /* hue-heartrate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hue-heartrate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C8DB531C24C3FF00F03DD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		67C8DB551C24C3FF00F03DD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		67C8DB551C24C3FF00F03DD6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		67C8DB581C24C3FF00F03DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67C8DB5A1C24C3FF00F03DD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67C8DB5D1C24C3FF00F03DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67C8DB5F1C24C3FF00F03DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67C8DB671C24C41F00F03DD6 /* hue-heartrate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "hue-heartrate.entitlements"; sourceTree = "<group>"; };
+		67C8DB6A1C24C62000F03DD6 /* HueHeartrateWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HueHeartrateWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C8DB6D1C24C62000F03DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		67C8DB6F1C24C62000F03DD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67C8DB711C24C62000F03DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67C8DB761C24C62100F03DD6 /* HueHeartrateWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HueHeartrateWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C8DB7B1C24C62100F03DD6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		67C8DB7D1C24C62100F03DD6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		67C8DB7F1C24C62100F03DD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67C8DB811C24C62100F03DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67C8DB8D1C24D25C00F03DD6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		67C8DB8F1C24D25C00F03DD6 /* HueHeartrateWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "HueHeartrateWatch Extension.entitlements"; sourceTree = "<group>"; };
+		B0B10573BD9156AC088CF9CE /* Pods-HueHeartrateWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HueHeartrateWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HueHeartrateWatch Extension/Pods-HueHeartrateWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		BB901F9DBFDC847D7738E557 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED34844F1A6D9634C2FE9C8F /* Pods-HueHeartrateWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HueHeartrateWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-HueHeartrateWatch Extension/Pods-HueHeartrateWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,14 +101,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67C8DB731C24C62100F03DD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C8DB8E1C24D25C00F03DD6 /* HealthKit.framework in Frameworks */,
+				47617309C9D4FDA2FBE6A2F4 /* Pods_HueHeartrateWatch_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29607056427279A338F02720 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB901F9DBFDC847D7738E557 /* Pods.framework */,
+				2F0E8CAC75CA1ED310899E03 /* Pods_HueHeartrateWatch_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48B7019CE065E0A56859817E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2751647022204946690D5DBE /* Pods.debug.xcconfig */,
+				03698D8EF2B54C28DDE16B49 /* Pods.release.xcconfig */,
+				B0B10573BD9156AC088CF9CE /* Pods-HueHeartrateWatch Extension.debug.xcconfig */,
+				ED34844F1A6D9634C2FE9C8F /* Pods-HueHeartrateWatch Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		67C8DB471C24C3FF00F03DD6 = {
 			isa = PBXGroup;
 			children = (
+				67C8DB8D1C24D25C00F03DD6 /* HealthKit.framework */,
 				67C8DB521C24C3FF00F03DD6 /* hue-heartrate */,
+				67C8DB6B1C24C62000F03DD6 /* HueHeartrateWatch */,
+				67C8DB7A1C24C62100F03DD6 /* HueHeartrateWatch Extension */,
 				67C8DB511C24C3FF00F03DD6 /* Products */,
+				48B7019CE065E0A56859817E /* Pods */,
+				29607056427279A338F02720 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				67C8DB501C24C3FF00F03DD6 /* hue-heartrate.app */,
+				67C8DB6A1C24C62000F03DD6 /* HueHeartrateWatch.app */,
+				67C8DB761C24C62100F03DD6 /* HueHeartrateWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +159,37 @@
 		67C8DB521C24C3FF00F03DD6 /* hue-heartrate */ = {
 			isa = PBXGroup;
 			children = (
+				67C8DB671C24C41F00F03DD6 /* hue-heartrate.entitlements */,
 				67C8DB531C24C3FF00F03DD6 /* AppDelegate.swift */,
-				67C8DB551C24C3FF00F03DD6 /* ViewController.swift */,
+				67C8DB551C24C3FF00F03DD6 /* MainViewController.swift */,
 				67C8DB571C24C3FF00F03DD6 /* Main.storyboard */,
 				67C8DB5A1C24C3FF00F03DD6 /* Assets.xcassets */,
 				67C8DB5C1C24C3FF00F03DD6 /* LaunchScreen.storyboard */,
 				67C8DB5F1C24C3FF00F03DD6 /* Info.plist */,
 			);
 			path = "hue-heartrate";
+			sourceTree = "<group>";
+		};
+		67C8DB6B1C24C62000F03DD6 /* HueHeartrateWatch */ = {
+			isa = PBXGroup;
+			children = (
+				67C8DB6C1C24C62000F03DD6 /* Interface.storyboard */,
+				67C8DB6F1C24C62000F03DD6 /* Assets.xcassets */,
+				67C8DB711C24C62000F03DD6 /* Info.plist */,
+			);
+			path = HueHeartrateWatch;
+			sourceTree = "<group>";
+		};
+		67C8DB7A1C24C62100F03DD6 /* HueHeartrateWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				67C8DB8F1C24D25C00F03DD6 /* HueHeartrateWatch Extension.entitlements */,
+				67C8DB7B1C24C62100F03DD6 /* InterfaceController.swift */,
+				67C8DB7D1C24C62100F03DD6 /* ExtensionDelegate.swift */,
+				67C8DB7F1C24C62100F03DD6 /* Assets.xcassets */,
+				67C8DB811C24C62100F03DD6 /* Info.plist */,
+			);
+			path = "HueHeartrateWatch Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +202,54 @@
 				67C8DB4C1C24C3FF00F03DD6 /* Sources */,
 				67C8DB4D1C24C3FF00F03DD6 /* Frameworks */,
 				67C8DB4E1C24C3FF00F03DD6 /* Resources */,
+				67C8DB8C1C24C62100F03DD6 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				67C8DB831C24C62100F03DD6 /* PBXTargetDependency */,
 			);
 			name = "hue-heartrate";
 			productName = "hue-heartrate";
 			productReference = 67C8DB501C24C3FF00F03DD6 /* hue-heartrate.app */;
 			productType = "com.apple.product-type.application";
+		};
+		67C8DB691C24C62000F03DD6 /* HueHeartrateWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67C8DB891C24C62100F03DD6 /* Build configuration list for PBXNativeTarget "HueHeartrateWatch" */;
+			buildPhases = (
+				67C8DB681C24C62000F03DD6 /* Resources */,
+				67C8DB881C24C62100F03DD6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67C8DB791C24C62100F03DD6 /* PBXTargetDependency */,
+			);
+			name = HueHeartrateWatch;
+			productName = HueHeartrateWatch;
+			productReference = 67C8DB6A1C24C62000F03DD6 /* HueHeartrateWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		67C8DB751C24C62100F03DD6 /* HueHeartrateWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67C8DB851C24C62100F03DD6 /* Build configuration list for PBXNativeTarget "HueHeartrateWatch Extension" */;
+			buildPhases = (
+				F7CD85290CF63A27F03657BE /* Check Pods Manifest.lock */,
+				67C8DB721C24C62100F03DD6 /* Sources */,
+				67C8DB731C24C62100F03DD6 /* Frameworks */,
+				67C8DB741C24C62100F03DD6 /* Resources */,
+				88BDCA854222A6DDA694984B /* Embed Pods Frameworks */,
+				FBE9B6D3C5768057E2D63BFD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HueHeartrateWatch Extension";
+			productName = "HueHeartrateWatch Extension";
+			productReference = 67C8DB761C24C62100F03DD6 /* HueHeartrateWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +263,25 @@
 				TargetAttributes = {
 					67C8DB4F1C24C3FF00F03DD6 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WS925YREA8;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					67C8DB691C24C62000F03DD6 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WS925YREA8;
+					};
+					67C8DB751C24C62100F03DD6 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WS925YREA8;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -113,6 +299,8 @@
 			projectRoot = "";
 			targets = (
 				67C8DB4F1C24C3FF00F03DD6 /* hue-heartrate */,
+				67C8DB691C24C62000F03DD6 /* HueHeartrateWatch */,
+				67C8DB751C24C62100F03DD6 /* HueHeartrateWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,19 +316,106 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67C8DB681C24C62000F03DD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C8DB701C24C62000F03DD6 /* Assets.xcassets in Resources */,
+				67C8DB6E1C24C62000F03DD6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C8DB741C24C62100F03DD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C8DB801C24C62100F03DD6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88BDCA854222A6DDA694984B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HueHeartrateWatch Extension/Pods-HueHeartrateWatch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7CD85290CF63A27F03657BE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBE9B6D3C5768057E2D63BFD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HueHeartrateWatch Extension/Pods-HueHeartrateWatch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		67C8DB4C1C24C3FF00F03DD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67C8DB561C24C3FF00F03DD6 /* ViewController.swift in Sources */,
+				67C8DB561C24C3FF00F03DD6 /* MainViewController.swift in Sources */,
 				67C8DB541C24C3FF00F03DD6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67C8DB721C24C62100F03DD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C8DB7E1C24C62100F03DD6 /* ExtensionDelegate.swift in Sources */,
+				67C8DB7C1C24C62100F03DD6 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67C8DB791C24C62100F03DD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67C8DB751C24C62100F03DD6 /* HueHeartrateWatch Extension */;
+			targetProxy = 67C8DB781C24C62100F03DD6 /* PBXContainerItemProxy */;
+		};
+		67C8DB831C24C62100F03DD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67C8DB691C24C62000F03DD6 /* HueHeartrateWatch */;
+			targetProxy = 67C8DB821C24C62100F03DD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		67C8DB571C24C3FF00F03DD6 /* Main.storyboard */ = {
@@ -157,6 +432,14 @@
 				67C8DB5D1C24C3FF00F03DD6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		67C8DB6C1C24C62000F03DD6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67C8DB6D1C24C62000F03DD6 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -249,10 +532,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "hue-heartrate/hue-heartrate.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "hue-heartrate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kasra.hue-heartrate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +547,88 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "hue-heartrate/hue-heartrate.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "hue-heartrate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kasra.hue-heartrate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		67C8DB861C24C62100F03DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0B10573BD9156AC088CF9CE /* Pods-HueHeartrateWatch Extension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "HueHeartrateWatch Extension/HueHeartrateWatch Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "HueHeartrateWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kasra.hue-heartrate.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		67C8DB871C24C62100F03DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED34844F1A6D9634C2FE9C8F /* Pods-HueHeartrateWatch Extension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "HueHeartrateWatch Extension/HueHeartrateWatch Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "HueHeartrateWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kasra.hue-heartrate.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		67C8DB8A1C24C62100F03DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = HueHeartrateWatch_Extension;
+				INFOPLIST_FILE = HueHeartrateWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kasra.hue-heartrate.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		67C8DB8B1C24C62100F03DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = HueHeartrateWatch_Extension;
+				INFOPLIST_FILE = HueHeartrateWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kasra.hue-heartrate.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
 			name = Release;
 		};
@@ -286,6 +651,25 @@
 				67C8DB641C24C3FF00F03DD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67C8DB851C24C62100F03DD6 /* Build configuration list for PBXNativeTarget "HueHeartrateWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C8DB861C24C62100F03DD6 /* Debug */,
+				67C8DB871C24C62100F03DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67C8DB891C24C62100F03DD6 /* Build configuration list for PBXNativeTarget "HueHeartrateWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C8DB8A1C24C62100F03DD6 /* Debug */,
+				67C8DB8B1C24C62100F03DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

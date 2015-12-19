@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>HueHeartrateWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>hue-heartrate.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>67C8DB4F1C24C3FF00F03DD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>67C8DB691C24C62000F03DD6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

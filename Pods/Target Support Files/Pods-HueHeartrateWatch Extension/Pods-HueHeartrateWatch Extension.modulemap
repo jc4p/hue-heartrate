@@ -1,0 +1,6 @@
+framework module Pods_HueHeartrateWatch_Extension {
+  umbrella header "Pods-HueHeartrateWatch Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}
